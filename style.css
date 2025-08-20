@@ -1,0 +1,80 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background: linear-gradient(135deg, #500000, #000000);
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Cabeçalho com foto e nome */
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.9em;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+/* Seção de links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+.link-card {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.link-card:hover {
+    transform: scale(1.10); /* Efeito de zoom */
+    background-color: #ff0000;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #ccc;
+}
